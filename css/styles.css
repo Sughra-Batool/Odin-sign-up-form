@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'BoomBox';
+    src: url('BoomBox-2.woff2') format('woff2'),
+        url('BoomBox-2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-image:url("../images/background1.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto';
+    color: #E5E7E7;
+    line-height: 33px;
+    margin: 70px 70px 70px 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.sign-up-details {
+  width: 500px;
+}
+
+.sign-up-head {
+  background-color: #303030;
+  padding: 10px 40px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.sign-up {
+  background-color: #E5E7E7;
+  padding: 10px 15px;
+  line-height: 40px;
+  border-radius: 0px 0px 5px 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.logo-left,
+.logo {
+  font-family: BoomBox;
+  font-size: 1.5rem;
+  color: #C3C3C3;
+}
+
+.logo-left {
+  background: rgba(44, 43, 43, 0.7);
+  padding: 30px 25px 20px 25px;
+  margin-top: 70px;
+}
+
+.logo-font {
+  color: #EE1C25;
+}
+
+label {
+  color: #303030;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+input {
+  /*border: 2px solid rgb(58, 11, 11);*/
+  border-radius: 8px;
+  margin-left: 5px;
+  padding: 7px;
+
+  display: block;
+  
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+
+  margin-left: 130px;
+  color: #303030;
+}
+
+button {
+  background-color: #303030;
+  border-radius: 8px;
+  padding: 7px 45px;
+  color: #E5E7E7;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input:user-invalid {
+  border: 2px solid red;
+}
+
+input:user-valid {
+  border: 2px solid rgb(0, 255, 42);
+}
+
+input:focus,
+button:hover {
+  box-shadow: 0 0 5px 2px rgb(69, 35, 194);
+}
+
+
+
+a:hover {
+  font-weight: bold;
+  color: #EE1C25;
+}

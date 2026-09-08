@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aavansoft Sign Up Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="javascript/script.js" defer></script>
+</head>
+<body>
+    <header class="logo-left">
+       <h1><span class="logo-font">AAVAN</span>SOFT</h1>
+    </header>
+    <div class="sign-up-details">
+        <div class="sign-up-head">
+            <h1>Sign Up to <span class="logo"><span class="logo-font">AAVAN</span>SOFT<span></h1>
+            <p><em>Want professional Guide? Sign up to join now!</em></p>
+        </div>
+        
+        <form action="" method="get" class="sign-up">
+            <div class="form-row">
+                <label for="first-name">First Name* </label>
+                <input type="text" name="user-first-name" id="first-name" placeholder="Gemma" required/>
+            </div>
+            <div class="form-row">
+                <label for="last-name">Last Name*</label>
+                <input type="text" name="user-last-name" id="last-name" placeholder="Wilson" required/>
+            </div>      
+            <div class="form-row">
+                <label for="email">email*</label>
+                <input type="email" name="user-email" id="email" placeholder="abc@example.com" required/>
+            </div>
+            <div class="form-row">
+                <label for="phone-number">Phone No*</label>
+                <input type="tel" name="user-phone-number" id="phone-number" placeholder="921234567987"  pattern="[0-9]{10,12}" required/>
+            </div>
+            <div class="form-row">
+                <label for="password">Password*</label>
+                <input type="password" name="user-password" id="password" required/>
+            </div>
+            <div class="form-row">
+                <label for="confirm-password">Confirm Password*</label>
+                <input type="password" name="user-confirm-password" id="confirm-password" required/>
+            </div>
+            <footer class="sign-up-foot">
+                <button>Sign Up</button>
+                <div class="form-row">
+                    already have an account? <a href="">login</a>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
