@@ -19,7 +19,7 @@ phoneNum.addEventListener('blur', (e) => {
     const phne = phoneNum.value.trim();
 
     if (!/^\d{12}$/.test(phne) || !phne.startsWith('923')) {
-        alert('Phone number must not have alphabets and must have 12 digits');
+        alert('Must have 12 digits starting with 923 and  no letters');
         phoneNum.value = '';
     } 
 })
